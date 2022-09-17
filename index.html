@@ -6,6 +6,12 @@
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
   <title>Malabar Bakes & Food Court</title>
+
+  <!-- React & Babel CDN -->
+  <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+  <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -93,6 +99,213 @@
 
     </div>
   </header><!-- End Header -->
+  
+  <script src="./data.js"></script>
+
+  <script type="text/babel">
+    function MenuCard(props) {
+      var classone = `col-lg-6 menu-item filter-${props.category}`
+      return (
+        <div className={classone}>
+          <img src={props.img} className="menu-img" alt="" />
+          <div className="menu-content">
+            <a href="#">{props.name}</a><span>&#8377; {props.price}</span>
+          </div>
+          
+        </div>
+      )
+    }
+
+    function App() {
+      return (
+        <div className="row menu-container" data-aos="fade-up" data-aos-delay="200">
+          <MenuCard name={data.rice[0].name} price={data.rice[0].price} category="rice" img="./assets/img/menu/Rice/mixed fried rice.jpeg" />
+          <MenuCard name={data.rice[1].name} price={data.rice[1].price} category="rice" img="./assets/img/menu/Rice/chicken fried rice.jpeg" />
+          <MenuCard name={data.rice[2].name} price={data.rice[2].price} category="rice" img="./assets/img/menu/Rice/egg fried rice.jpeg" />
+          <MenuCard name={data.rice[3].name} price={data.rice[3].price} category="rice" img="./assets/img/menu/Rice/veg fried rice.jpeg" />
+          <MenuCard name={data.rice[4].name} price={data.rice[4].price} category="rice" img="./assets/img/menu/Rice/Schezwan fried rice.jpeg" />
+          <MenuCard name={data.rice[5].name} price={data.rice[5].price} category="rice" img="./assets/img/menu/Rice/jeera rice.jpeg" />
+          <MenuCard name={data.rice[6].name} price={data.rice[6].price} category="rice" img="./assets/img/menu/Rice/lemon rice.jpeg" />
+          <MenuCard name={data.rice[7].name} price={data.rice[7].price} category="rice" img="./assets/img/menu/Rice/garlic rice.jpeg" />
+          <MenuCard name={data.rice[8].name} price={data.rice[8].price} category="rice" img="./assets/img/menu/Rice/chicken mandi.jpeg" />
+          <MenuCard name={data.rice[9].name} price={data.rice[9].price} category="rice" img="./assets/img/menu/Rice/curd rice.jpeg" />
+          <MenuCard name={data.rice[10].name} price={data.rice[10].price} category="rice" img="./assets/img/menu/Rice/tomato rice.jpeg" />
+          
+          <MenuCard name={data.noodles[0].name} price={data.noodles[0].price} category="noodles" img="./assets/img/menu/Noodles/chicken noodles.jpeg" />
+          <MenuCard name={data.noodles[1].name} price={data.noodles[1].price} category="noodles" img="./assets/img/menu/Noodles/egg noodles.jpeg" />
+          <MenuCard name={data.noodles[2].name} price={data.noodles[2].price} category="noodles" img="./assets/img/menu/Noodles/veg noodles.jpeg" />
+          <MenuCard name={data.noodles[3].name} price={data.noodles[3].price} category="noodles" img="./assets/img/menu/Noodles/Schezwan noodles.jpeg" />
+          <MenuCard name={data.noodles[4].name} price={data.noodles[4].price} category="noodles" img="./assets/img/menu/Noodles/Schezwan mixed noodles.jpeg" />
+          
+          <MenuCard name={data.soup[0].name} price={data.soup[0].price} category="soup" img="./assets/img/menu/Soup/sweet corn chicken soup.jpeg" />
+          <MenuCard name={data.soup[1].name} price={data.soup[1].price} category="soup" img="./assets/img/menu/Soup/sweet corn veg.jpeg" />
+          <MenuCard name={data.soup[2].name} price={data.soup[2].price} category="soup" img="./assets/img/menu/Soup/hot and sour veg.jpeg" />
+          <MenuCard name={data.soup[3].name} price={data.soup[3].price} category="soup" img="./assets/img/menu/Soup/hot and sour chicken.jpeg" />
+          <MenuCard name={data.soup[4].name} price={data.soup[4].price} category="soup" img="./assets/img/menu/Soup/manchow chicken.jpeg" />
+          <MenuCard name={data.soup[5].name} price={data.soup[5].price} category="soup" img="./assets/img/menu/Soup/manchow veg soup.jpeg" />
+          <MenuCard name={data.soup[6].name} price={data.soup[6].price} category="soup" img="./assets/img/menu/Soup/chicken clear soup.jpeg" />
+          <MenuCard name={data.soup[7].name} price={data.soup[7].price} category="soup" img="./assets/img/menu/Soup/veg clear sop.jpeg" />
+          
+          <MenuCard name={data.starter[0].name} price={data.starter[0].price} category="starter" img="./assets/img/menu/starters/chicken 65.jpeg" />
+          <MenuCard name={data.starter[1].name} price={data.starter[1].price} category="starter" img="./assets/img/menu/starters/chicken kondattam.jpg" />
+          <MenuCard name={data.starter[2].name} price={data.starter[2].price} category="starter" img="./assets/img/menu/starters/dragon chicken.jpeg" />
+          <MenuCard name={data.starter[3].name} price={data.starter[3].price} category="starter" img="./assets/img/menu/starters/chilli chicken dry.jpeg" />
+          <MenuCard name={data.starter[4].name} price={data.starter[4].price} category="starter" img="./assets/img/menu/starters/chilly gobi dry.jpeg" />
+          <MenuCard name={data.starter[5].name} price={data.starter[5].price} category="starter" img="./assets/img/menu/starters/gobi manchurian.jpeg" />
+          <MenuCard name={data.starter[6].name} price={data.starter[6].price} category="starter" img="./assets/img/menu/starters/chilly paneer dry.jpeg" />
+          <MenuCard name={data.starter[7].name} price={data.starter[7].price} category="starter" img="./assets/img/menu/starters/paneer 65.jpeg" />
+          <MenuCard name={data.starter[8].name} price={data.starter[8].price} category="starter" img="./assets/img/menu/starters/hot and sweet chicken.jpeg" />
+          <MenuCard name={data.starter[9].name} price={data.starter[9].price} category="starter" img="./assets/img/menu/starters/American chopsy.jpeg" />
+          <MenuCard name={data.starter[10].name} price={data.starter[10].price} category="starter" img="./assets/img/menu/starters/chicken tikka.jpeg" />
+          <MenuCard name={data.starter[11].name} price={data.starter[11].price} category="starter" img="./assets/img/menu/starters/chicken Lollipop.jpeg" />
+          <MenuCard name={data.starter[12].name} price={data.starter[12].price} category="starter" img="./assets/img/menu/starters/crispy veg.jpeg" />
+        
+          <MenuCard name={data.biriyani[0].name} price={data.biriyani[0].price} category="biriyani" img="./assets/img/menu/lobster-bisque.jpg" />
+          <MenuCard name={data.biriyani[1].name} price={data.biriyani[1].price} category="biriyani" img="./assets/img/menu/lobster-bisque.jpg" />
+          <MenuCard name={data.biriyani[2].name} price={data.biriyani[2].price} category="biriyani" img="./assets/img/menu/lobster-bisque.jpg" />
+          <MenuCard name={data.biriyani[3].name} price={data.biriyani[3].price} category="biriyani" img="./assets/img/menu/lobster-bisque.jpg" />
+          <MenuCard name={data.biriyani[4].name} price={data.biriyani[4].price} category="biriyani" img="./assets/img/menu/lobster-bisque.jpg" />
+
+          <MenuCard name={data.nonvegcurries[0].name} price={data.nonvegcurries[0].price} category="nonvegcurries" img="./assets/img/menu/lobster-bisque.jpg" />
+          <MenuCard name={data.nonvegcurries[1].name} price={data.nonvegcurries[1].price} category="nonvegcurries" img="./assets/img/menu/lobster-bisque.jpg" />
+          <MenuCard name={data.nonvegcurries[2].name} price={data.nonvegcurries[2].price} category="nonvegcurries" img="./assets/img/menu/lobster-bisque.jpg" />
+          <MenuCard name={data.nonvegcurries[3].name} price={data.nonvegcurries[3].price} category="nonvegcurries" img="./assets/img/menu/lobster-bisque.jpg" />
+          <MenuCard name={data.nonvegcurries[4].name} price={data.nonvegcurries[4].price} category="nonvegcurries" img="./assets/img/menu/lobster-bisque.jpg" />
+          <MenuCard name={data.nonvegcurries[5].name} price={data.nonvegcurries[5].price} category="nonvegcurries" img="./assets/img/menu/lobster-bisque.jpg" />
+          <MenuCard name={data.nonvegcurries[6].name} price={data.nonvegcurries[6].price} category="nonvegcurries" img="./assets/img/menu/lobster-bisque.jpg" />
+          <MenuCard name={data.nonvegcurries[7].name} price={data.nonvegcurries[7].price} category="nonvegcurries" img="./assets/img/menu/lobster-bisque.jpg" />
+          <MenuCard name={data.nonvegcurries[8].name} price={data.nonvegcurries[8].price} category="nonvegcurries" img="./assets/img/menu/lobster-bisque.jpg" />
+          <MenuCard name={data.nonvegcurries[9].name} price={data.nonvegcurries[9].price} category="nonvegcurries" img="./assets/img/menu/lobster-bisque.jpg" />
+          <MenuCard name={data.nonvegcurries[10].name} price={data.nonvegcurries[10].price} category="nonvegcurries" img="./assets/img/menu/lobster-bisque.jpg" />
+          <MenuCard name={data.nonvegcurries[11].name} price={data.nonvegcurries[11].price} category="nonvegcurries" img="./assets/img/menu/lobster-bisque.jpg" />
+          <MenuCard name={data.nonvegcurries[12].name} price={data.nonvegcurries[12].price} category="nonvegcurries" img="./assets/img/menu/lobster-bisque.jpg" />
+          <MenuCard name={data.nonvegcurries[13].name} price={data.nonvegcurries[13].price} category="nonvegcurries" img="./assets/img/menu/lobster-bisque.jpg" />
+          
+          <MenuCard name={data.vegcurries[0].name} price={data.vegcurries[0].price} category="vegcurries" img="./assets/img/menu/lobster-bisque.jpg" />
+          <MenuCard name={data.vegcurries[2].name} price={data.vegcurries[2].price} category="vegcurries" img="./assets/img/menu/lobster-bisque.jpg" />
+          <MenuCard name={data.vegcurries[3].name} price={data.vegcurries[3].price} category="vegcurries" img="./assets/img/menu/lobster-bisque.jpg" />
+          <MenuCard name={data.vegcurries[4].name} price={data.vegcurries[4].price} category="vegcurries" img="./assets/img/menu/lobster-bisque.jpg" />
+          <MenuCard name={data.vegcurries[5].name} price={data.vegcurries[5].price} category="vegcurries" img="./assets/img/menu/lobster-bisque.jpg" />
+          <MenuCard name={data.vegcurries[6].name} price={data.vegcurries[6].price} category="vegcurries" img="./assets/img/menu/lobster-bisque.jpg" />
+          <MenuCard name={data.vegcurries[7].name} price={data.vegcurries[7].price} category="vegcurries" img="./assets/img/menu/lobster-bisque.jpg" />
+          <MenuCard name={data.vegcurries[8].name} price={data.vegcurries[8].price} category="vegcurries" img="./assets/img/menu/lobster-bisque.jpg" />
+          <MenuCard name={data.vegcurries[9].name} price={data.vegcurries[9].price} category="vegcurries" img="./assets/img/menu/lobster-bisque.jpg" />
+          <MenuCard name={data.vegcurries[10].name} price={data.vegcurries[10].price} category="vegcurries" img="./assets/img/menu/lobster-bisque.jpg" />
+          <MenuCard name={data.vegcurries[11].name} price={data.vegcurries[11].price} category="vegcurries" img="./assets/img/menu/lobster-bisque.jpg" />
+          <MenuCard name={data.vegcurries[12].name} price={data.vegcurries[12].price} category="vegcurries" img="./assets/img/menu/lobster-bisque.jpg" />
+          <MenuCard name={data.vegcurries[13].name} price={data.vegcurries[13].price} category="vegcurries" img="./assets/img/menu/lobster-bisque.jpg" />
+          <MenuCard name={data.vegcurries[14].name} price={data.vegcurries[14].price} category="vegcurries" img="./assets/img/menu/lobster-bisque.jpg" />
+          
+          <MenuCard name={data.fish[0].name} price={data.fish[0].price} category="fish" img="./assets/img/menu/lobster-bisque.jpg" />
+          <MenuCard name={data.fish[1].name} price={data.fish[1].price} category="fish" img="./assets/img/menu/lobster-bisque.jpg" />
+          <MenuCard name={data.fish[2].name} price={data.fish[2].price} category="fish" img="./assets/img/menu/lobster-bisque.jpg" />
+          <MenuCard name={data.fish[3].name} price={data.fish[3].price} category="fish" img="./assets/img/menu/lobster-bisque.jpg" />
+          <MenuCard name={data.fish[4].name} price={data.fish[4].price} category="fish" img="./assets/img/menu/lobster-bisque.jpg" />
+          <MenuCard name={data.fish[5].name} price={data.fish[5].price} category="fish" img="./assets/img/menu/lobster-bisque.jpg" />
+          <MenuCard name={data.fish[6].name} price={data.fish[6].price} category="fish" img="./assets/img/menu/lobster-bisque.jpg" />
+          <MenuCard name={data.fish[7].name} price={data.fish[7].price} category="fish" img="./assets/img/menu/lobster-bisque.jpg" />
+          <MenuCard name={data.fish[8].name} price={data.fish[8].price} category="fish" img="./assets/img/menu/lobster-bisque.jpg" />
+          <MenuCard name={data.fish[9].name} price={data.fish[9].price} category="fish" img="./assets/img/menu/lobster-bisque.jpg" />
+          
+          <MenuCard name={data.breads[0].name} price={data.breads[0].price} category="bread" img="./assets/img/menu/lobster-bisque.jpg" />
+          <MenuCard name={data.breads[1].name} price={data.breads[1].price} category="bread" img="./assets/img/menu/lobster-bisque.jpg" />
+          <MenuCard name={data.breads[2].name} price={data.breads[2].price} category="bread" img="./assets/img/menu/lobster-bisque.jpg" />
+          <MenuCard name={data.breads[3].name} price={data.breads[3].price} category="bread" img="./assets/img/menu/lobster-bisque.jpg" />
+          <MenuCard name={data.breads[4].name} price={data.breads[4].price} category="bread" img="./assets/img/menu/lobster-bisque.jpg" />
+          <MenuCard name={data.breads[5].name} price={data.breads[5].price} category="bread" img="./assets/img/menu/lobster-bisque.jpg" />
+          <MenuCard name={data.breads[6].name} price={data.breads[6].price} category="bread" img="./assets/img/menu/lobster-bisque.jpg" />
+          <MenuCard name={data.breads[7].name} price={data.breads[7].price} category="bread" img="./assets/img/menu/lobster-bisque.jpg" />
+          
+          <MenuCard name={data.hot[0].name} price={data.hot[0].price} category="hot" img="./assets/img/menu/lobster-bisque.jpg" />
+          <MenuCard name={data.hot[1].name} price={data.hot[1].price} category="hot" img="./assets/img/menu/lobster-bisque.jpg" />
+          <MenuCard name={data.hot[2].name} price={data.hot[2].price} category="hot" img="./assets/img/menu/lobster-bisque.jpg" />
+          <MenuCard name={data.hot[3].name} price={data.hot[3].price} category="hot" img="./assets/img/menu/lobster-bisque.jpg" />
+          
+          <MenuCard name={data.lime[0].name} price={data.lime[0].price} category="lime" img="./assets/img/menu/lobster-bisque.jpg" />
+          <MenuCard name={data.lime[1].name} price={data.lime[1].price} category="lime" img="./assets/img/menu/lobster-bisque.jpg" />
+          <MenuCard name={data.lime[2].name} price={data.lime[2].price} category="lime" img="./assets/img/menu/lobster-bisque.jpg" />
+          <MenuCard name={data.lime[3].name} price={data.lime[3].price} category="lime" img="./assets/img/menu/lobster-bisque.jpg" />
+          <MenuCard name={data.lime[4].name} price={data.lime[4].price} category="lime" img="./assets/img/menu/lobster-bisque.jpg" />
+          <MenuCard name={data.lime[5].name} price={data.lime[5].price} category="lime" img="./assets/img/menu/lobster-bisque.jpg" />
+          <MenuCard name={data.lime[6].name} price={data.lime[6].price} category="lime" img="./assets/img/menu/lobster-bisque.jpg" />
+          
+          <MenuCard name={data.juice[0].name} price={data.juice[0].price} category="juice" img="./assets/img/menu/lobster-bisque.jpg" />
+          <MenuCard name={data.juice[1].name} price={data.juice[1].price} category="juice" img="./assets/img/menu/lobster-bisque.jpg" />
+          <MenuCard name={data.juice[2].name} price={data.juice[2].price} category="juice" img="./assets/img/menu/lobster-bisque.jpg" />
+          <MenuCard name={data.juice[3].name} price={data.juice[3].price} category="juice" img="./assets/img/menu/lobster-bisque.jpg" />
+          <MenuCard name={data.juice[4].name} price={data.juice[4].price} category="juice" img="./assets/img/menu/lobster-bisque.jpg" />
+          <MenuCard name={data.juice[5].name} price={data.juice[5].price} category="juice" img="./assets/img/menu/lobster-bisque.jpg" />
+          <MenuCard name={data.juice[6].name} price={data.juice[6].price} category="juice" img="./assets/img/menu/lobster-bisque.jpg" />
+          <MenuCard name={data.juice[7].name} price={data.juice[7].price} category="juice" img="./assets/img/menu/lobster-bisque.jpg" />
+          <MenuCard name={data.juice[8].name} price={data.juice[8].price} category="juice" img="./assets/img/menu/lobster-bisque.jpg" />
+          <MenuCard name={data.juice[9].name} price={data.juice[9].price} category="juice" img="./assets/img/menu/lobster-bisque.jpg" />
+          <MenuCard name={data.juice[10].name} price={data.juice[10].price} category="juice" img="./assets/img/menu/lobster-bisque.jpg" />
+          <MenuCard name={data.juice[11].name} price={data.juice[11].price} category="juice" img="./assets/img/menu/lobster-bisque.jpg" />
+          <MenuCard name={data.juice[12].name} price={data.juice[12].price} category="juice" img="./assets/img/menu/lobster-bisque.jpg" />
+          <MenuCard name={data.juice[13].name} price={data.juice[13].price} category="juice" img="./assets/img/menu/lobster-bisque.jpg" />
+          <MenuCard name={data.juice[14].name} price={data.juice[14].price} category="juice" img="./assets/img/menu/lobster-bisque.jpg" />
+          <MenuCard name={data.juice[15].name} price={data.juice[15].price} category="juice" img="./assets/img/menu/lobster-bisque.jpg" />
+          <MenuCard name={data.juice[16].name} price={data.juice[16].price} category="juice" img="./assets/img/menu/lobster-bisque.jpg" />
+          <MenuCard name={data.juice[17].name} price={data.juice[17].price} category="juice" img="./assets/img/menu/lobster-bisque.jpg" />
+          <MenuCard name={data.juice[18].name} price={data.juice[18].price} category="juice" img="./assets/img/menu/lobster-bisque.jpg" />
+          <MenuCard name={data.juice[19].name} price={data.juice[19].price} category="juice" img="./assets/img/menu/lobster-bisque.jpg" />
+
+          <MenuCard name={data.shakes[0].name} price={data.shakes[0].price} category="shakes" img="./assets/img/menu/lobster-bisque.jpg" />
+          <MenuCard name={data.shakes[1].name} price={data.shakes[1].price} category="shakes" img="./assets/img/menu/lobster-bisque.jpg" />
+          <MenuCard name={data.shakes[2].name} price={data.shakes[2].price} category="shakes" img="./assets/img/menu/lobster-bisque.jpg" />
+          <MenuCard name={data.shakes[3].name} price={data.shakes[3].price} category="shakes" img="./assets/img/menu/lobster-bisque.jpg" />
+          <MenuCard name={data.shakes[4].name} price={data.shakes[4].price} category="shakes" img="./assets/img/menu/lobster-bisque.jpg" />
+          <MenuCard name={data.shakes[5].name} price={data.shakes[5].price} category="shakes" img="./assets/img/menu/lobster-bisque.jpg" />
+          <MenuCard name={data.shakes[6].name} price={data.shakes[6].price} category="shakes" img="./assets/img/menu/lobster-bisque.jpg" />
+          <MenuCard name={data.shakes[7].name} price={data.shakes[7].price} category="shakes" img="./assets/img/menu/lobster-bisque.jpg" />
+          <MenuCard name={data.shakes[8].name} price={data.shakes[8].price} category="shakes" img="./assets/img/menu/lobster-bisque.jpg" />
+          <MenuCard name={data.shakes[9].name} price={data.shakes[9].price} category="shakes" img="./assets/img/menu/lobster-bisque.jpg" />
+          <MenuCard name={data.shakes[10].name} price={data.shakes[10].price} category="shakes" img="./assets/img/menu/lobster-bisque.jpg" />
+          <MenuCard name={data.shakes[11].name} price={data.shakes[11].price} category="shakes" img="./assets/img/menu/lobster-bisque.jpg" />
+          <MenuCard name={data.shakes[12].name} price={data.shakes[12].price} category="shakes" img="./assets/img/menu/lobster-bisque.jpg" />
+          <MenuCard name={data.shakes[13].name} price={data.shakes[13].price} category="shakes" img="./assets/img/menu/lobster-bisque.jpg" />
+          <MenuCard name={data.shakes[14].name} price={data.shakes[14].price} category="shakes" img="./assets/img/menu/lobster-bisque.jpg" />
+          
+          <MenuCard name={data.icecream[0].name} price={data.icecream[0].price} category="icecream" img="./assets/img/menu/lobster-bisque.jpg" />
+          <MenuCard name={data.icecream[1].name} price={data.icecream[1].price} category="icecream" img="./assets/img/menu/lobster-bisque.jpg" />
+          <MenuCard name={data.icecream[2].name} price={data.icecream[2].price} category="icecream" img="./assets/img/menu/lobster-bisque.jpg" />
+          <MenuCard name={data.icecream[3].name} price={data.icecream[3].price} category="icecream" img="./assets/img/menu/lobster-bisque.jpg" />
+          <MenuCard name={data.icecream[4].name} price={data.icecream[4].price} category="icecream" img="./assets/img/menu/lobster-bisque.jpg" />
+          <MenuCard name={data.icecream[5].name} price={data.icecream[5].price} category="icecream" img="./assets/img/menu/lobster-bisque.jpg" />
+          <MenuCard name={data.icecream[6].name} price={data.icecream[6].price} category="icecream" img="./assets/img/menu/lobster-bisque.jpg" />
+          <MenuCard name={data.icecream[7].name} price={data.icecream[7].price} category="icecream" img="./assets/img/menu/lobster-bisque.jpg" />
+          <MenuCard name={data.icecream[8].name} price={data.icecream[8].price} category="icecream" img="./assets/img/menu/lobster-bisque.jpg" />
+          
+          <MenuCard name={data.lessi[0].name} price={data.lessi[0].price} category="lessi" img="./assets/img/menu/lobster-bisque.jpg" />
+          <MenuCard name={data.lessi[1].name} price={data.lessi[1].price} category="lessi" img="./assets/img/menu/lobster-bisque.jpg" />
+          <MenuCard name={data.lessi[2].name} price={data.lessi[2].price} category="lessi" img="./assets/img/menu/lobster-bisque.jpg" />
+          <MenuCard name={data.lessi[3].name} price={data.lessi[3].price} category="lessi" img="./assets/img/menu/lobster-bisque.jpg" />
+          <MenuCard name={data.lessi[4].name} price={data.lessi[4].price} category="lessi" img="./assets/img/menu/lobster-bisque.jpg" />
+          
+          <MenuCard name={data.fruitsalad[0].name} price={data.fruitsalad[0].price} category="fruitsalad" img="./assets/img/menu/lobster-bisque.jpg" />
+          <MenuCard name={data.fruitsalad[1].name} price={data.fruitsalad[1].price} category="fruitsalad" img="./assets/img/menu/lobster-bisque.jpg" />
+          <MenuCard name={data.fruitsalad[2].name} price={data.fruitsalad[2].price} category="fruitsalad" img="./assets/img/menu/lobster-bisque.jpg" />
+          <MenuCard name={data.fruitsalad[3].name} price={data.fruitsalad[3].price} category="fruitsalad" img="./assets/img/menu/lobster-bisque.jpg" />
+          
+          <MenuCard name={data.falooda[0].name} price={data.falooda[0].price} category="falooda" img="./assets/img/menu/lobster-bisque.jpg" />
+          <MenuCard name={data.falooda[1].name} price={data.falooda[1].price} category="falooda" img="./assets/img/menu/lobster-bisque.jpg" />
+          <MenuCard name={data.falooda[2].name} price={data.falooda[2].price} category="falooda" img="./assets/img/menu/lobster-bisque.jpg" />
+          <MenuCard name={data.falooda[3].name} price={data.falooda[3].price} category="falooda" img="./assets/img/menu/lobster-bisque.jpg" />
+          
+          <MenuCard name={data.mojito[0].name} price={data.mojito[0].price} category="mojito" img="./assets/img/menu/lobster-bisque.jpg" />
+          <MenuCard name={data.mojito[1].name} price={data.mojito[1].price} category="mojito" img="./assets/img/menu/lobster-bisque.jpg" />
+          <MenuCard name={data.mojito[2].name} price={data.mojito[2].price} category="mojito" img="./assets/img/menu/lobster-bisque.jpg" />
+          <MenuCard name={data.mojito[3].name} price={data.mojito[3].price} category="mojito" img="./assets/img/menu/lobster-bisque.jpg" />
+          <MenuCard name={data.mojito[4].name} price={data.mojito[4].price} category="mojito" img="./assets/img/menu/lobster-bisque.jpg" />
+          <MenuCard name={data.mojito[5].name} price={data.mojito[5].price} category="mojito" img="./assets/img/menu/lobster-bisque.jpg" />
+          
+        </div>
+      )
+    }
+
+    const root = ReactDOM.createRoot(document.getElementById("menu-div-app"))
+    root.render(<App />)
+  </script>
 
   <main id="main">
     <section class="breadcrumbs">
@@ -110,15 +323,32 @@
               <div class="col-lg-12 d-flex justify-content-center">
                 <ul id="menu-flters">
                   <li data-filter="*" class="filter-active">All</li>
-                  <li data-filter=".filter-mandi">Mandi</li>
-                  <li data-filter=".filter-salad">Salad Items</li>
-                  <li data-filter=".filter-burger">Burger</li>
+                  <li data-filter=".filter-rice">Rice</li>
+                  <li data-filter=".filter-noodles">Noodles</li>
+                  <li data-filter=".filter-soup">Soup</li>
+                  <li data-filter=".filter-starter">Starter</li>
+                  <li data-filter=".filter-biriyani">Biriyani</li>
+                  <li data-filter=".filter-nonvegcurries">Non Veg Curries</li>
+                  <li data-filter=".filter-vegcurries">Veg Curries</li>
+                  <li data-filter=".filter-fish">Fish</li>
+                  <li data-filter=".filter-bread">Bread</li>
+                  <li data-filter=".filter-hot">Hot</li>
+                  <li data-filter=".filter-lime">Lime</li>
+                  <li data-filter=".filter-juice">Juice</li>
+                  <li data-filter=".filter-shakes">Shakes</li>
+                  <li data-filter=".filter-icecream">Icecream</li>
+                  <li data-filter=".filter-lessi">Lessi</li>
+                  <li data-filter=".filter-fruitsalad">Fruitsalad</li>
+                  <li data-filter=".filter-falooda">Falooda</li>
+                  <li data-filter=".filter-mojito">Mojito</li>
                 </ul>
               </div>
             </div>
     
-            <div class="row menu-container" data-aos="fade-up" data-aos-delay="200">
-    
+            <div id="menu-div-app"></div>
+            
+            <!-- <div class="row menu-container" data-aos="fade-up" data-aos-delay="200">
+
               <div class="col-lg-6 menu-item filter-salad">
                 <img src="assets/img/menu/veg salad.jpg" class="menu-img" alt="">
                 <div class="menu-content">
@@ -209,7 +439,7 @@
                 </div>
               </div>
     
-            </div>
+            </div> -->
     
           </div>
         </section>
