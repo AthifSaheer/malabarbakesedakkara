@@ -313,7 +313,7 @@ var data = {
             "price": "as per size"
         },
         {
-            "name": "Cube fish*",
+            "name": "Aykora fish",
             "price": "as per size"
         },
         {
