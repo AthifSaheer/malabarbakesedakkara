@@ -18,10 +18,6 @@ var data = {
             "price": 120,
         },
         {
-            "name": "Schezwan fried rice*",
-            "price": "----",
-        },
-        {
             "name": "Jeera rice",
             "price": 80,
         },
@@ -34,8 +30,8 @@ var data = {
             "price": 90,
         },
         {
-            "name": "Mandhi rice*",
-            "price": "---",
+            "name": "Mandhi rice Q/H/F",
+            "price": "80/150/280",
         },
         {
             "name": "Curd rice",
@@ -44,6 +40,22 @@ var data = {
         {
             "name": "Tomato rice*",
             "price": 80,
+        },
+        {
+            "name": "Schezwan mixed fried rice",
+            "price": 170,
+        },
+        {
+            "name": "Schezwan chicken fried rice",
+            "price": 150,
+        },
+        {
+            "name": "Schezwan egg fried rice",
+            "price": 140,
+        },
+        {
+            "name": "Schezwan veg fried rice",
+            "price": 130,
         },
     ],
     "noodles": [
@@ -168,7 +180,11 @@ var data = {
         },
         {
             "name": "Fish biriyani*",
-            "price": 160
+            "price": 150
+        },
+        {
+            "name": "Aykora biriyani*",
+            "price": 180
         },
         {
             "name": "Veg biriyani*",
@@ -426,7 +442,7 @@ var data = {
     "juice": [
         {
             "name": "Grape",
-            "price": 60
+            "price": 50
         },
         {
             "name": "Pineapple",
@@ -450,7 +466,7 @@ var data = {
         },
         {
             "name": "Sharja",
-            "price": 60
+            "price": 50
         },
         {
             "name": "Chicku",
@@ -466,7 +482,7 @@ var data = {
         },
         {
             "name": "Pappaya",
-            "price": 60
+            "price": 50
         },
         {
             "name": "Saudi",
@@ -478,15 +494,15 @@ var data = {
         },
         {
             "name": "Shammam",
-            "price": 60
+            "price": 50
         },
         {
             "name": "Badam",
-            "price": 60
+            "price": 50
         },
         {
             "name": "Guava",
-            "price": 60
+            "price": 50
         },
         {
             "name": "Anar",
@@ -501,84 +517,92 @@ var data = {
             "price": 60
         },
         {
-            "name": "Dates",
+            "name": "Tender coconut",
+            "price": 60
+        },
+        {
+            "name": "Butter",
+            "price": 60
+        },
+        {
+            "name": "Jackfruit",
             "price": 60
         },
     ],
     "shakes": [
         {
             "name": "Sharja",
-            "price": 90
+            "price": 70
         },
         {
             "name": "Chicku",
-            "price": 90
+            "price": 80
         },
         {
             "name": "Apple",
-            "price": 90
+            "price": 80
         },
         {
             "name": "Mango",
-            "price": 90
+            "price": 60
         },
         {
             "name": "Pappaya",
-            "price": 90
+            "price": 70
         },
         {
             "name": "Avacado",
-            "price": 90
+            "price": 80
         },
         {
             "name": "Anar",
-            "price": 90
+            "price": 80
         },
         {
             "name": "Saudi",
-            "price": 90
+            "price": 80
         },
         {
             "name": "Strawberry",
-            "price": 90
+            "price": 80
         },
         {
             "name": "Shammam",
-            "price": 90
+            "price": 70
         },
         {
             "name": "Badam",
-            "price": 90
+            "price": 70
         },
         {
             "name": "Guava",
-            "price": 90
+            "price": 70
         },
         {
             "name": "Tender coconut",
-            "price": 100
+            "price": 90
         },
         {
             "name": "Spanish delight",
-            "price": 100
+            "price": 90
         },
         {
             "name": "Jack fruit",
-            "price": 100
+            "price": 90
         },
     ],
     "icecream": [
         {
             "name": "Vanilla",
-            "price": 70
+            "price": 60
         },
         {
             "name": "Strawberry",
-            "price": 80
+            "price": 70
         },
         {
             "name": "Pista",
-            "price": 80
+            "price": 70
         },
         {
             "name": "Chocolate",
@@ -590,15 +614,15 @@ var data = {
         },
         {
             "name": "Tender coconut",
-            "price": 100
+            "price": 80
         },
         {
             "name": "Jack fruit",
-            "price": 100
+            "price": 80
         },
         {
             "name": "Black currant",
-            "price": 100
+            "price": 80
         },
         {
             "name": "Spanish delight",
@@ -630,7 +654,7 @@ var data = {
     "fruitsalad": [
         {
             "name": "Fruit salad",
-            "price": 70
+            "price": 60
         },
         {
             "name": "Special salad",
@@ -687,6 +711,110 @@ var data = {
         {
             "name": "Mint mojito",
             "price": 70
+        },
+    ],
+    "samoona": [
+        {
+            "name": "Chicken samoona",
+            "price": 40
+        },
+        {
+            "name": "Beef samoona",
+            "price": 50
+        },
+        {
+            "name": "Egg samoona",
+            "price": 40
+        },
+        {
+            "name": "Veg samoona",
+            "price": 30
+        },
+        {
+            "name": "Nuggets samoona",
+            "price": 30
+        },
+        {
+            "name": "Zinger samoona",
+            "price": 70
+        },
+    ],
+    "soda": [
+        {
+            "name": "Lime soda",
+            "price": 15
+        },
+        {
+            "name": "Sweet soda",
+            "price": 40
+        },
+        {
+            "name": "Chilly soda",
+            "price": 20
+        },
+        {
+            "name": "Sweet & Salt soda",
+            "price": 40
+        },
+        {
+            "name": "Orange soda",
+            "price": 40
+        },
+        {
+            "name": "Grape soda",
+            "price": 40
+        },
+        {
+            "name": "Pineapple soda",
+            "price": 40
+        },
+    ],
+    "burger": [
+        {
+            "name": "Chicken burger",
+            "price": 70
+        },
+        {
+            "name": "Beef burger",
+            "price": 80
+        },
+        {
+            "name": "Zinger burger",
+            "price": 100
+        },
+        {
+            "name": "Veg burger",
+            "price": 50
+        },
+    ],
+    "sandwichClub": [
+        {
+            "name": "Chicken sandwich",
+            "price": 70
+        },
+        {
+            "name": "Egg sandwich",
+            "price": 50
+        },
+        {
+            "name": "Veg sandwich",
+            "price": 60
+        },
+        {
+            "name": "Zinger sandwich",
+            "price": 100
+        },
+        {
+            "name": "Chicken club",
+            "price": 90
+        },
+        {
+            "name": "Veg club",
+            "price": 70
+        },
+        {
+            "name": "Beef club",
+            "price": 100
         },
     ],
 }
