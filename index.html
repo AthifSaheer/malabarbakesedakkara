@@ -42,16 +42,19 @@
     <div class="container d-flex justify-content-center justify-content-md-between">
 
       <div class="contact-info d-flex align-items-center">
-        <i class="bi bi-phone d-flex align-items-center"><span>+91 9089 000 000</span></i>
+        <a href="+91 9089 000 000">
+          Delivery available call: 
+          <i class="bi bi-phone d-flex align-items-center"><span>+91 9089 000 000</span></i>
+        </a>
+
         <i class="bi bi-clock d-flex align-items-center ms-4"><span> Mon-Sun: 11AM - 11PM</span></i>
       </div>
 
-      <!-- <div class="languages d-none d-md-flex align-items-center">
+      <div class="languages d-none d-md-flex align-items-center">
         <ul>
-          <li>En</li>
-          <li><a href="#">De</a></li>
+          <img src="./assets/img/logo.png" alt="" width="120" height="120" style="margin-top: 45px;">
         </ul>
-      </div> -->
+      </div>
     </div>
   </div>
 
@@ -330,6 +333,8 @@
           <MenuCard name={data.biriyani[3].name} price={data.biriyani[3].price} category="biriyani" img="./assets/img/menu/Biriyani/veg Biryani.jpeg" />
           <MenuCard name={data.biriyani[4].name} price={data.biriyani[4].price} category="biriyani" img="./assets/img/menu/Biriyani/prawns biryani.jpeg" />
           <MenuCard name={data.biriyani[5].name} price={data.biriyani[5].price} category="biriyani" img="./assets/img/menu/Biriyani/prawns biryani.jpeg" />
+          <MenuCard name={data.biriyani[6].name} price={data.biriyani[6].price} category="biriyani" img="./assets/img/menu/Biriyani/avoli.jpg" />
+          <MenuCard name={data.biriyani[7].name} price={data.biriyani[7].price} category="biriyani" img="./assets/img/menu/Biriyani/amur.jpg" />
 
           <MenuCard name={data.nonvegcurries[0].name} price={data.nonvegcurries[0].price} category="nonvegcurries" img="./assets/img/menu/non veg curries/chicken curry.jpeg" />
           <MenuCard name={data.nonvegcurries[1].name} price={data.nonvegcurries[1].price} category="nonvegcurries" img="./assets/img/menu/non veg curries/chilly chicken.jpeg" />

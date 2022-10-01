@@ -72,7 +72,7 @@ var data = {
             "price": 120
         },
         {
-            "name": "Schezwan noodles dry/egg/veg*",
+            "name": "Schezwan noodles chicken/egg/veg",
             "price": "160/140/130"
         },
         {
@@ -194,6 +194,14 @@ var data = {
             "name": "Prawns biriyani*",
             "price": 220
         },
+        {
+            "name": "Avoli biriyani",
+            "price": 220
+        },
+        {
+            "name": "Amur biriyani",
+            "price": 220
+        },
     ],
     "nonvegcurries": [
         {
@@ -226,7 +234,7 @@ var data = {
         },
         {
             "name": "Chicken mugulai Q/H/F *",
-            "price": "----"
+            "price": "150/260/480"
         },
         {
             "name": "Butter chicken Q/H/F",
