@@ -123,8 +123,8 @@
             <div class="row" data-aos="fade-up" data-aos-delay="10">
               <div class="col-lg-12 d-flex justify-content-center">
                 <ul id="menu-flters">
-                  <li data-filter="*">All</li>
-                  <li data-filter=".filter-rice"  class="filter-active">Rice</li>
+                  <li data-filter="*" class="filter-active">All</li>
+                  <li data-filter=".filter-rice">Rice</li>
                   <li data-filter=".filter-noodles">Noodles</li>
                   <li data-filter=".filter-soup">Soup</li>
                   <li data-filter=".filter-starter">Starter</li>
@@ -142,7 +142,7 @@
                   <li data-filter=".filter-fruitsalad">Fruitsalad</li>
                   <li data-filter=".filter-falooda">Falooda</li>
                   <li data-filter=".filter-mojito">Mojito</li>
-                  <li data-filter=".filter-samoona">Samoona</li>
+                  <!-- <li data-filter=".filter-samoona">Samoona</li> -->
                   <li data-filter=".filter-soda">Soda</li>
                   <li data-filter=".filter-burger">Burger</li>
                   <li data-filter=".filter-sandwichClub">Sandwich & club</li>
@@ -265,10 +265,10 @@
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
   <script src="assets/vendor/php-email-form/validate.js"></script>
 
-  <!-- Template Main JS File -->
-  <script src="assets/js/main.js"></script>
+</body>
+<!-- Template Main JS File -->
+<script src="assets/js/main.js"></script>
 
-  
   <script type="text/babel">
     function MenuCard(props) {
       var classone = `col-lg-6 menu-item filter-${props.category}`
@@ -473,13 +473,6 @@
           <MenuCard name={data.mojito[4].name} price={data.mojito[4].price} category="mojito" img="./assets/img/menu/mojito/kiwi mojito.jpeg" />
           <MenuCard name={data.mojito[5].name} price={data.mojito[5].price} category="mojito" img="./assets/img/menu/mojito/mint mojito.jpeg" />
           
-          <MenuCard name={data.samoona[0].name} price={data.samoona[0].price} category="samoona" img="./assets/img/menu/samona/chicken samona.jpeg" />
-          <MenuCard name={data.samoona[1].name} price={data.samoona[1].price} category="samoona" img="./assets/img/menu/samona/beef samona.jpeg" />
-          <MenuCard name={data.samoona[2].name} price={data.samoona[2].price} category="samoona" img="./assets/img/menu/samona/egg samona.jpeg" />
-          <MenuCard name={data.samoona[3].name} price={data.samoona[3].price} category="samoona" img="./assets/img/menu/samona/veg samona.jpeg" />
-          <MenuCard name={data.samoona[4].name} price={data.samoona[4].price} category="samoona" img="./assets/img/menu/samona/nuggets samona.jpeg" />
-          <MenuCard name={data.samoona[5].name} price={data.samoona[5].price} category="samoona" img="./assets/img/menu/samona/zinger samona.jpeg" />
-          
           <MenuCard name={data.soda[0].name} price={data.soda[0].price} category="soda" img="./assets/img/menu/soda/limesoda.jpeg" />
           <MenuCard name={data.soda[1].name} price={data.soda[1].price} category="soda" img="./assets/img/menu/soda/sweet soda.jpeg" />
           <MenuCard name={data.soda[2].name} price={data.soda[2].price} category="soda" img="./assets/img/menu/soda/chilly soda.jpeg" />
@@ -509,6 +502,5 @@
     root.render(<App />)
   </script>
   
-</body>
 
 </html>
