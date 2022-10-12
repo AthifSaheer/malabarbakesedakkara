@@ -38,7 +38,7 @@ var data = {
             "price": 70,
         },
         {
-            "name": "Tomato rice*",
+            "name": "Tomato rice",
             "price": 80,
         },
         {
@@ -126,7 +126,7 @@ var data = {
         },
         {
             "name": "Dragon chicken",
-            "price": "250"
+            "price": "290"
         },
         {
             "name": "Chilly chicken dry Q/H/F",
@@ -149,49 +149,49 @@ var data = {
             "price": 150
         },
         {
-            "name": "Hot & sweet malabar chicken*",
-            "price": "----"
+            "name": "Hot & sweet malabar chicken",
+            "price": 280
         },
         {
-            "name": "American chopsy*",
-            "price": "----"
+            "name": "American chopsy",
+            "price": 180
         },
         {
             "name": "Chicken tikka",
             "price": 220
         },
         {
-            "name": "Lollypop*",
-            "price": "----"
+            "name": "Chicken lollypop",
+            "price": 160
         },
         {
-            "name": "Crispy veg*",
-            "price": "----"
+            "name": "Crispy veg",
+            "price": 130
         },
     ],
     "biriyani": [
         {
-            "name": "Chicken biriyani*",
+            "name": "Chicken biriyani",
             "price": 130
         },
         {
-            "name": "Motton biriyani*",
+            "name": "Motton biriyani",
             "price": 190
         },
         {
-            "name": "Fish biriyani*",
+            "name": "Fish biriyani",
             "price": 150
         },
         {
-            "name": "Aykora biriyani*",
+            "name": "Aykora biriyani",
             "price": 180
         },
         {
-            "name": "Veg biriyani*",
+            "name": "Veg biriyani",
             "price": 100
         },
         {
-            "name": "Prawns biriyani*",
+            "name": "Prawns biriyani",
             "price": 220
         },
         {
@@ -205,8 +205,8 @@ var data = {
     ],
     "nonvegcurries": [
         {
-            "name": "Chicken curry *",
-            "price": "---"
+            "name": "Chicken curry",
+            "price": 80
         },
         {
             "name": "Chilly chicken Q/H/F",
@@ -233,7 +233,7 @@ var data = {
             "price": "140/260/480"
         },
         {
-            "name": "Chicken mugulai Q/H/F *",
+            "name": "Chicken mugulai Q/H/F",
             "price": "150/260/480"
         },
         {
