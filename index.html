@@ -12,8 +12,8 @@
   <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
   <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
 
-  <meta content="" name="description">
-  <meta content="" name="keywords">
+  <meta content="Malabar Bakes & Food Court edakkara." name="description">
+  <meta content="Malabar Bakes & Food Court" name="keywords">
 
   <!-- Favicons -->
   <link href="assets/img/logo.png" rel="icon">
@@ -125,6 +125,8 @@
                 <ul id="menu-flters">
                   <li data-filter="*" class="filter-active">All</li>
                   <li data-filter=".filter-rice">Rice</li>
+                  <li data-filter=".filter-mandhi">Mandhi</li>
+                  <li data-filter=".filter-chicken">Chicken</li>
                   <li data-filter=".filter-noodles">Noodles</li>
                   <li data-filter=".filter-soup">Soup</li>
                   <li data-filter=".filter-starter">Starter</li>
@@ -300,6 +302,21 @@
           <MenuCard name={data.rice[11].name} price={data.rice[11].price} category="rice" img="./assets/img/menu/Rice/Schezwan chicken fried rice.jpeg" />
           <MenuCard name={data.rice[12].name} price={data.rice[12].price} category="rice" img="./assets/img/menu/Rice/Schezwan egg fried rice.jpeg" />
           <MenuCard name={data.rice[13].name} price={data.rice[13].price} category="rice" img="./assets/img/menu/Rice/Schezwan veg fried rice.jpeg" />
+          
+          <MenuCard name={data.mandhi[0].name} price={data.mandhi[0].price} category="mandhi" img="./assets/img/menu/mandhi/chicken mandhi.jpeg" />
+          <MenuCard name={data.mandhi[1].name} price={data.mandhi[1].price} category="mandhi" img="./assets/img/menu/mandhi/alfaham mandhi.jpeg" />
+          <MenuCard name={data.mandhi[2].name} price={data.mandhi[2].price} category="mandhi" img="./assets/img/menu/mandhi/shawaya mandhi.jpeg" />
+          <MenuCard name={data.mandhi[3].name} price={data.mandhi[3].price} category="mandhi" img="./assets/img/menu/mandhi/thandoori mandhi.jpeg" />
+          <MenuCard name={data.mandhi[4].name} price={data.mandhi[4].price} category="mandhi" img="./assets/img/menu/mandhi/beef ribs.jpeg" />
+          <MenuCard name={data.mandhi[5].name} price={data.mandhi[5].price} category="mandhi" img="./assets/img/menu/mandhi/peri peri mandhi.jpeg" />
+          
+          <MenuCard name={data.chicken[0].name} price={data.chicken[0].price} category="chicken" img="./assets/img/menu/chicken/thandoori.jpeg" />
+          <MenuCard name={data.chicken[1].name} price={data.chicken[1].price} category="chicken" img="./assets/img/menu/chicken/shawaya.jpeg" />
+          <MenuCard name={data.chicken[2].name} price={data.chicken[2].price} category="chicken" img="./assets/img/menu/chicken/alfaham.jpeg" />
+          <MenuCard name={data.chicken[3].name} price={data.chicken[3].price} category="chicken" img="./assets/img/menu/chicken/peri peri.jpeg" />
+          <MenuCard name={data.chicken[4].name} price={data.chicken[4].price} category="chicken" img="./assets/img/menu/chicken/ghostpepper.jpeg" />
+          <MenuCard name={data.chicken[5].name} price={data.chicken[5].price} category="chicken" img="./assets/img/menu/chicken/ribs.jpeg" />
+          <MenuCard name={data.chicken[6].name} price={data.chicken[6].price} category="chicken" img="./assets/img/menu/chicken/tikka.jpeg" />
           
           <MenuCard name={data.noodles[0].name} price={data.noodles[0].price} category="noodles" img="./assets/img/menu/Noodles/chicken noodles.jpeg" />
           <MenuCard name={data.noodles[1].name} price={data.noodles[1].price} category="noodles" img="./assets/img/menu/Noodles/egg noodles.jpeg" />

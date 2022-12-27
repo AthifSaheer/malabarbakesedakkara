@@ -1,4 +1,4 @@
-// rice, noodles, soup, starter, biriyani, nonvegcurries, vegcurries, fish, bread, hot, lime, juice, shakes, icecream, lessi, fruitsalad, falooda, mojito
+// rice, mandhi, chicken, noodles, soup, starter, biriyani, nonvegcurries, vegcurries, fish, bread, hot, lime, juice, shakes, icecream, lessi, fruitsalad, falooda, mojito
 var data = {
     "rice": [
         {
@@ -56,6 +56,62 @@ var data = {
         {
             "name": "Schezwan veg fried rice",
             "price": 130,
+        },
+    ],
+    "mandhi": [
+        {
+            "name": "Chicken mandhi Q/H/F",
+            "price": "160/320/640",
+        },
+        {
+            "name": "Alfaham mandhi Q/H/F",
+            "price": "180/350/680",
+        },
+        {
+            "name": "Shawaya mandhi Q/H/F",
+            "price": "180/350/680",
+        },
+        {
+            "name": "Thandoori mandhi Q/H/F",
+            "price": "190/350/680",
+        },
+        {
+            "name": "Ribs mandhi Q/H/F",
+            "price": "190/350/680",
+        },
+        {
+            "name": "Peri Peri Alfaham mandhi Q/H/F",
+            "price": "140/370/720",
+        },
+    ],
+    "chicken": [
+        {
+            "name": "Thandoori chicken Q/H/F",
+            "price": "120/240/480",
+        },
+        {
+            "name": "Shawaya chicken Q/H/F",
+            "price": "120/230/450",
+        },
+        {
+            "name": "Alfaham chicken Q/H/F",
+            "price": "120/240/480",
+        },
+        {
+            "name": "Peri peri alfaham Q/H/F",
+            "price": "140/270/520",
+        },
+        {
+            "name": "Ghost pepper alfaham Q/H/F",
+            "price": "140/270/520",
+        },
+        {
+            "name": "Beef ribs Q/H/F",
+            "price": "110/210/310",
+        },
+        {
+            "name": "Chicken tikka",
+            "price": "220",
         },
     ],
     "noodles": [
